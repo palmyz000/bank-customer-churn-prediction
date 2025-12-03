@@ -126,6 +126,7 @@ Visit: http://localhost:8000/docs
 
 **Suphawit MeeSak**\
 Junior AI Engineer / Junior Data Scientist\
+
 LinkedIn: https://www.linkedin.com/in/suphawit-meesak/\
 
 Email: Suphawit11@icloud.com
