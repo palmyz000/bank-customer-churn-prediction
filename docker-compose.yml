@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+
+  datascience-notebook:
+    build:
+      context: .           
+      dockerfile: notebooks/Dockerfile 
+    image: my-ml-notebook
+    container_name: churn_project_notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work    
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - GRANT_SUDO=yes
+    command: start-notebook.sh --NotebookApp.token=''
+
+  model-api:
+    build:
+      context: .                 
+      dockerfile: src/Dockerfile 
+    image: bank-churn-api        
+    container_name: churn_project_api
+    ports:
+      - "8000:8000"              
+    volumes:
+      - ./models:/app/models     
+    restart: always              

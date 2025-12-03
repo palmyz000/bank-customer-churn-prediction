@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank-churn-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bank-churn-app
+  template:
+    metadata:
+      labels:
+        app: bank-churn-app
+    spec:
+      containers:
+      - name: bank-churn-container
+        image: bank-churn-api:latest 
+        imagePullPolicy: Never       
+        ports:
+        - containerPort: 8000
