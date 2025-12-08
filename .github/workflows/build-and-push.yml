@@ -35,4 +35,4 @@ jobs:
         file: ./Dockerfile.api  # ชี้ไปที่ไฟล์ Dockerfile.api ของเรา
         push: true
         # ตั้งชื่อ Image (เปลี่ยน palmyz000 เป็นชื่อ User คุณด้วยนะครับ!)
-        tags: palmyz000/bank-churn-api:latest
+        tags: palmmeesak/bank-churn-api:latest
