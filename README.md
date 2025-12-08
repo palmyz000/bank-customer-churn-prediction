@@ -117,12 +117,16 @@ Visit: http://localhost:8000/docs
   Metric                Score   Meaning
   --------------------- ------- -------------------------
   Recall (Class 1)      \~80%   Captures most churners
+  
   Precision (Class 1)   \~44%   Accepts false positives
+  
   Accuracy              \~80%   Balanced performance
 
 ## 👤 **Author**
 
 **Suphawit MeeSak**\
 Junior AI Engineer / Junior Data Scientist\
+
 LinkedIn: https://www.linkedin.com/in/suphawit-meesak/\
+
 Email: Suphawit11@icloud.com
