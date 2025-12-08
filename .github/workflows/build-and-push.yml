@@ -31,8 +31,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v4
       with:
-        context: .
-        file: ./Dockerfile.api  # ชี้ไปที่ไฟล์ Dockerfile.api ของเรา
+        context: .                  # 👈 สำคัญมาก! ห้ามแก้ (ให้มองเห็นทั้งโปรเจกต์)
+        file: ./src/Dockerfile
         push: true
-        # ตั้งชื่อ Image (เปลี่ยน palmyz000 เป็นชื่อ User คุณด้วยนะครับ!)
         tags: palmmeesak/bank-churn-api:latest
